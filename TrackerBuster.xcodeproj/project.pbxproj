@@ -17,9 +17,7 @@
 		AA000008 /* TrackerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000008; };
 		AA000009 /* BLEScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000009; };
 		AA000010 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000010; };
-		AA000011 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000011; };
 		AA000012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB000012; };
-		AA000013 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = AD000001; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +31,6 @@
 		AB000008 /* TrackerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerType.swift; sourceTree = "<group>"; };
 		AB000009 /* BLEScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScanner.swift; sourceTree = "<group>"; };
 		AB000010 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
-		AB000011 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		AB000012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB000013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB000020 /* TrackerBuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackerBuster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA000013 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +82,6 @@
 			children = (
 				AB000009 /* BLEScanner.swift */,
 				AB000010 /* NotificationService.swift */,
-				AB000011 /* AdManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -135,9 +130,6 @@
 			dependencies = (
 			);
 			name = TrackerBuster;
-			packageProductDependencies = (
-				AD000001 /* GoogleMobileAds */,
-			);
 			productName = TrackerBuster;
 			productReference = AB000020 /* TrackerBuster.app */;
 			productType = "com.apple.product-type.application";
@@ -167,9 +159,6 @@
 				Base,
 			);
 			mainGroup = AC000010;
-			packageReferences = (
-				AD000010 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
-			);
 			productRefGroup = AC000015 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,7 +194,6 @@
 				AA000008 /* TrackerType.swift in Sources */,
 				AA000009 /* BLEScanner.swift in Sources */,
 				AA000010 /* NotificationService.swift in Sources */,
-				AA000011 /* AdManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,24 +341,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		AD000010 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AD000001 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AD000010;
-			productName = GoogleMobileAds;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE000099 /* Project object */;
 }
