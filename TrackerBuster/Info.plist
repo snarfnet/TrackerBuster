@@ -8,12 +8,5 @@
 	<string>近くのBLEトラッカーを検出するためにBluetoothを使用します。</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>不審なトラッカーが検出された場所を記録するために位置情報を使用します。</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>バックグラウンドでもトラッカーの監視を続けるために位置情報を使用します。</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>bluetooth-central</string>
-		<string>location</string>
-	</array>
 </dict>
 </plist>
